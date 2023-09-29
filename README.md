@@ -35,9 +35,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Contact
 If you have any questions or feedback regarding this code or project, please feel free to contact the project owner:
 
-Name: [Your Name]
-Email: [Your Email Address]
-GitHub: Your GitHub Profile
+Name: Alejandro Morales
+Email: Alejandro.morales.a@gmail.com
+GitHub: https://github.com/Ale6995
 
 
 
