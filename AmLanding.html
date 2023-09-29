@@ -1,0 +1,121 @@
+<doctype html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <title>Provincial Smart Homes Alejandro Morales</title>
+        <!-- Add Last Version of bootstrap for responsive design -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- Adding same Font as PSHS Website -->
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar text-sm-center ">
+                <a class="navbar-brand" href="https://provincialsmarthome.com/" target="_blank"><img src="logo.png"
+                        alt="Logo"></a>
+
+            </nav>
+        </header>
+        <div class="container mx-auto">
+            <div class="row">
+                <!-- Form card -->
+                <div class="col-md-5">
+                    <div class="container form-container">
+                        <div class="card-body" id="apt-body">
+                            <h1 class="card-title">Schedule your appointment</h1>
+                            <form id="appointment-form">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" name="email"  placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="address" name="address" placeholder="Address"required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" class="form-control" id="date" name="date" placeholder="Date" required>
+                                </div>
+                                <div class="form-group">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                    <select class="form-control" id="hour" name="hour" required>
+                                                    <!-- JavaScript will populate this dropdown -->
+                                                </select>
+                                                
+                                            </div>
+                                            <div class="col-6">
+
+                                            <select class="form-control" id="minute" name="minute" required>
+                                                <!-- JavaScript will populate this dropdown -->
+                                            </select>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    <button type="submit" class="btn btn-dark sbt">Book it now</button>
+                                </div>
+                                
+                            </form>
+                            <!-- Success message div -->
+                         
+                        </div>
+                        <div id="success-message">
+                            <div id="success-content">
+                                <h2 id="appointment-booked">Appointment Booked</h2>
+                                <img src="success-image.png" alt="Success" id="success-image">
+                                <h3 id="success-email"></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="info-container">
+                        <div class="container mx-auto">
+                            <div class="col-12">
+                                <div class=" text-center">
+                                    <h1>Don't Sweat It, Stay Cool! </h1>
+                                    <p>Discover the latest in AC technology and find the perfect cooling solution for your
+                                        home.</p>
+                                    <p> Our expert team is here to assist you every step of the way. Schedule an appointment
+                                        now to experience a world of comfort and energy savings.</p>
+            
+                                </div>
+                                <div class="row mt-3 " >
+                                    <div class="col-md-4 text-center  ">
+                                        <img src="area.png" alt="Small Image 1" class="img-fluid small-img">
+                                        <p>Modern AC units are designed to be sleek and compact, optimizing space utilization
+                                            and fitting seamlessly into your living environment.</p>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                        <img src="cost.png" alt="Small Image 2" class="img-fluid small-img">
+                                        <p>Improved energy efficiency and better temperature control translate into long-term
+                                            cost savings, making a new AC unit a smart investment for your home and wallet.</p>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                        <img src="cold.png" alt="Small Image 3" class="img-fluid  small-img">
+                                        <p>Benefit from quick and efficient cooling as new AC units are engineered to reach
+                                            desired temperatures faster, providing immediate comfort.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+
+        <script src="AmLanding.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    </body>
+
+    </html>
