@@ -13,6 +13,11 @@ body {
   background-attachment: fixed;
 
   }
+  @media (max-width: 768px) {
+    body {
+        background-position: center center; /* Center the background image vertically and horizontally in smaller screens */
+    }
+}
 
 .navbar-brand img {
   max-height: 80px;

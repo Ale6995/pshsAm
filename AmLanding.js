@@ -55,6 +55,10 @@ document.addEventListener("DOMContentLoaded", function () {
             dateInput.setAttribute("max", maxDate);
             console.log(minDate)
             console.log(maxDate)
+        dateInput.onfocus = function (event) {
+            this.type = 'date';
+            this.focus();
+    }
 
 
             const hourInput = document.getElementById("hour");
@@ -122,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
             minuteInput.value='0';
         }
          // Now you can use the captured form data as needed, e.g., send it to a server or process it further
-         // Hide the form
+         // Hide the form 
          const formBody = document.getElementById("apt-body");
          formBody.style.display = "none";
          const successMessage = document.getElementById("success-message");
