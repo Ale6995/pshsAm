@@ -39,10 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
           
-
             const dateInput = document.getElementById("date");
-            // const timeInput = document.getElementById("time");
-
             // Calculate the date 2 days from the current date
             const currentDate = new Date();
             currentDate.setDate(currentDate.getDate() );
@@ -60,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
             this.focus();
     }
 
-
+            // Find fields hour and minute in DOM
             const hourInput = document.getElementById("hour");
             const minuteInput = document.getElementById("minute");
 
@@ -81,11 +78,11 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             
 
-
             // Prevent manual input or modification of the date field
             dateInput.addEventListener("keydown", function (e) {
                 e.preventDefault();
             });
+            // set the minutes to 0 if user selects the last time slot
             hourInput.addEventListener("change",function(e){
                 console.log(minute.value.toString);
                 if (hourInput.value === "21") {
@@ -135,13 +132,8 @@ document.addEventListener("DOMContentLoaded", function () {
          // Show the success message with animation
          successEmail.textContent = `Email: ${email}`;
          successMessage.classList.add("show");
-
-         console.log("Email:", email);
-         console.log("Address:", address);
-         console.log("Date:", date);
-         console.log("Time:", time);
  
-         // Reset the form (optional)
+         // Reset the form
          form.reset();
      });
     
